@@ -151,7 +151,7 @@ section {
     display: flex;
 }
 
-/* Seç~çao de perfil */
+/* Seçao de perfil */
 
 #profile {
     display: flex;
@@ -185,8 +185,8 @@ img {
     text-align: center;
 }
 
-.section_text_p1 {
-    font-size: 1.75;
+.section_text_p2 {
+    font-size: 1.75rem;
     margin-bottom: 1rem;
 }
 
@@ -253,4 +253,96 @@ img {
 
 .btn-container {
     gap: 1rem;
+}
+
+/* Seção sobre */
+
+#about {
+    position: relative;
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+    display: flex;
+}
+
+.about-pic {
+    border-radius: 2rem;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: #1b1e23;;
+    border-radius: 2rem;
+    border: rgb(153, 153, 153) 0.1rem solid;
+    border-color: rgb(153, 153, 153);
+    text-align: center;
+}
+
+.section-container {
+    gap: 4rem;
+    height: 80%;
+}
+
+.section_pic-container {
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+/* Seção experiencia */
+
+#experience {
+    position: relative;
+}
+
+.experience-sub-title {
+    color: white;
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.experience-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+article {
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+article .icon {
+    cursor: default;
 }
