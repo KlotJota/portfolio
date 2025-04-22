@@ -1,332 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
+
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Jonathan Speçamillio</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#experiencia">Experiência</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Jonathan Speçamillio</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="menu-links">
-            <li><a href="#sobre" onclick="toggleMenu()">Sobre</a></li>
-                <li><a href="#experiencia" onclick="toggleMenu()">Experiência</a></li>
-                <li><a href="#projetos" onclick="toggleMenu()">Projetos</a></li>
-                <li><a href="#contato" onclick="toggleMenu()">Contato</a></li>
-        </div>
-        </div>
-    </nav>
-    <section id="profile">
-        <div class="section_pic-container">
-            <img src="./assets/perfil.jpg" alt="Foto de perfil de Jonathan">
-        </div>
-        <div class="section_text">
-            <p class="section_text_p1"> Olá, eu sou o</p>
-            <h1 class="title">Jonathan</h1>
-            <p class="section_text_p2">Desenvolvedor brabo</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Curriculo - Jonathan Dev.pdf')">Baixar currículo</button>
-                <button class="btn btn-color-1" onclick="location.href='./#contato'">Informações de contato</button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" 
-                    alt="Meu perfil no LinkedIn"
-                    class="icon" 
-                    onclick="location.href='https://www.linkedin.com/in/jonathan-garcia-speçamillio-619252224/'">
-                <img src="./assets/github.png" 
-                    alt="Meu perfil no GitHub"
-                    class="icon" 
-                    onclick="location.href='https://github.com/KlotJota'">
-            </div>
-        </div>
-    </section>
-    <section id="about">
-        <p class="section_text_p1">Saiba mais</p>
-        <p class="title">Sobre mim</p>
-        <div class="section-container">
-            <div class="section_pic-container">
-                <img 
-                src="./assets/perfil.jpg"
-                alt="Foto de perfil"
-                class="about-pic">
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img 
-                        src="./assets/experience.png" 
-                        alt="Ícone de experiência"
-                        class="icon"
-                        />
-                    <h3>Experiência</h3>
-                    <p>Programador fullstack <br/> 
-                        JavaScript <br/>
-                        TypeScript <br/>
-                        React <br/>
-                        C# <br/>
-                        Flutter
-                    </p>
-                </div>
-                <div class="details-container">
-                    <img 
-                        src="./assets/education.png" 
-                        alt="Ícone de formação"
-                        class="icon"
-                    />
-                    <h3>Formação</h3>
-                    <p>Tecnólogo em Análise e Desenvolvimento de Sistemas</p>
-                </div>
-            </div>
-            <div class="text-container">
-                <p> TesteTesteTesteTesteTeste
-                    TesteTesteTesteTesteTeste
-                    TesteTesteTesteTesteTeste
-                    TesteTesteTesteTesteTeste
-                    TesteTesteTesteTesteTeste
-                </p>
-            </div>
-        </div>
+  <div class="animated-blob"></div>
+  
+  <div class="second-animated-blob"></div>
+  <div class="third-animated-blob"></div>
+  <div class="fourth-animated-blob"></div>
+  <nav id="desktop-nav">
+    <ul class="nav-links">
+      <li><img src="./assets/linkedin.png" alt="Meu perfil no LinkedIn" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/jonathan-garcia-speçamillio-619252224/'"></li>
+      <li><img src="./assets/github.png" alt="Meu perfil no GitHub" class="icon"
+          onclick="location.href='https://github.com/KlotJota'"></li>
+      <li><img src="./assets/instagram.png" alt="Meu perfil no Instagram" class="icon"
+          onclick="location.href='https://www.instagram.com/_jonathan_gs_/'"></li>
+    </ul>
+  </nav>
+  <section id="profile">
+    <div class="section_text">
+      <p class="section_text_p1"> Olá, eu sou o</p>
+      <h1 class="title">Jonathan</h1>
+      <p class="section_text_p2">Desenvolvedor Fullstack</p>
     </div>
-    <img 
-        src="./assets/arrow.png" 
-        alt="Ícone de seta"
-        class="arrow icon"
-        onclick="location.href='./#experiencia'"
-    />
-    </section>
-    <section id="experience">
-        <p class="section_text_p1">Explore minhas</p>
-        <h1 class="title">Experiências</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Desenvolvimento Fullstack</h2>
-                    <div class="article-container">
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Ícone de experiência"
-                            class="icon">
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Intermediário</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Ícone de experiência"
-                            class="icon">
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Intermediário</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Ícone de experiência"
-                            class="icon">
-                            <div>
-                                <h3>C#</h3>
-                                <p>Intermediário</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Ícone de experiência"
-                            class="icon">
-                            <div>
-                                <h3>Flutter</h3>
-                                <p>Intermediário</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Ícone de experiência"
-                            class="icon">
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Básico</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Ícone de experiência"
-                            class="icon">
-                            <div>
-                                <h3>TypeScript</h3>
-                                <p>Básico</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Desenvolvimento Fullstack</h2>
-                    <div class="article-container">
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Ícone de experiência"
-                            class="icon">
-                            <div>
-                                <h3>SQL Server</h3>
-                                <p>Básico</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Ícone de experiência"
-                            class="icon">
-                            <div>
-                                <h3>Firesbase - Firestore</h3>
-                                <p>Intermediário</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Ícone de experiência"
-                            class="icon">
-                            <div>
-                                <h3>MongoDB</h3>
-                                <p>Básico</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
+    <div class="section_pic-container">
+      <img src="./assets/perfil2.jpeg" alt="Foto de perfil de Jonathan">
+    </div>
+  </section>
+  <section id="about">
+    <p class="section_text_p1">Saiba mais</p>
+    <p class="title">Sobre mim</p>
+    <p class="about-description">Formado em 2023 em Análise e Desenvolvimento de Sistema pela FATEC - Rio Preto, venho atuando como desenvolvedor FullStack desde então. Desde cedo familiarizado com tecnologia, busco me aprofundar cada vez mais nas áreas que gosto e atuo.</p>
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container-about">
+            <img src="./assets/experience.png" alt="Ícone de experiência" class="icon" />
+            <h3 class="about-title">Experiência</h3>
+            <p> Node.js <br />
+              Angular <br />
+              Graphql <br />
+              C# <br />
+              SQL <br />
+              NoSQL <br />
+            </p>
+          </div>
+          <div class="details-container-about">
+            <img src="./assets/education.png" alt="Ícone de formação" class="icon" />
+            <h3 class="about-title">Formação</h3>
+            <p>Análise e Desenvolvimento de Sistemas</p>
+          </div>
+          <div class="details-container-about">
+            <img src="./assets/experience.png" alt="Ícone de experiência" class="icon" />
+            <h3 class="about-title">Stacks</h3>
+            <p> Git <br />
+              Testes unitários e e2e <br />
+              Metodologias ágeis <br />
+            </p>
+          </div>
         </div>
-        <img 
-        src="./assets/arrow.png" 
-        alt="Ícone de seta"
-        class="arrow icon"
-        onclick="location.href='./#projetos'">
-    </section>
-    <section id="projects">
-        <p class="section_text_p1">Navegue pelos meus mais recentes</p>
-        <h1 class="title">Projetos</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img 
-                    src="./assets/project-1.png" 
-                    alt="Projeto 1"
-                    class="project-img">
-                </div>
-                <h2 class="experience-sub-title project-title">Projeto 1</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" 
-                    onclick="location.href='https://github.com/KlotJota/how_to'">
-                    GitHub
-                </button>
-                <button class="btn btn-color-2 project-btn" 
-                    onclick="location.href='https://github.com/KlotJota/how_to'">
-                    Demonstração
-                </button>
-                </div>
-            </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img 
-                    src="./assets/project-2.png" 
-                    alt="Projeto 2"
-                    class="project-img">
-                </div>
-                <h2 class="experience-sub-title project-title">Projeto 2</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" 
-                    onclick="location.href='https://github.com/KlotJota/how_to'">
-                    GitHub
-                </button>
-                <button class="btn btn-color-2 project-btn" 
-                    onclick="location.href='https://github.com/KlotJota/how_to'">
-                    Demonstração
-                </button>
-                </div>
-            </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img 
-                    src="./assets/project-3.png" 
-                    alt="Projeto 3"
-                    class="project-img">
-                </div>
-                <h2 class="experience-sub-title project-title">Projeto 3</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" 
-                    onclick="location.href='https://github.com/KlotJota/how_to'">
-                    GitHub
-                </button>
-                <button class="btn btn-color-2 project-btn" 
-                    onclick="location.href='https://github.com/KlotJota/how_to'">
-                    Demonstração
-                </button>
-                </div>
-            </div></div>
+      </div>
+    </div>
+  </section>
+  <section id="experience">
+    <p class="section_text_p1">Explore minhas</p>
+    <h1 class="title">Experiências</h1>
+      <div class="experience-grid">
+        <div class="carousel-item">
+          <i class="devicon-html5-plain icon-carousel"></i>
+          HTML
         </div>
-        <img 
-        src="./assets/arrow.png" 
-        alt="Ícone de seta"
-        class="arrow icon"
-        onclick="location.href='./#projetos'">
-    </section>
-    <section id="contact">
-        <p class="section_text_p1">Chega mais</p>
-        <h1 class="title">Entre em contato</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img 
-                src="./assets/email.png" 
-                alt="Ícone de email"
-                class="icon contact-icon email-icon">
-            <p><a href="mailto:jonathan.specamillio@hotmail.com">Exemplo@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img 
-                src="./assets/linkedin.png" 
-                alt="Ícone de LinkedIn"
-                class="icon contact-icon">
-            <p><a href="https://www.linkedin.com/in/jonathan-garcia-speçamillio-619252224/">LinkedIn</a></p>
-            </div>
+        <div class="carousel-item">
+          <i class="devicon-css3-plain icon-carousel"></i>
+          CSS
         </div>
-    </section>
-    <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#experiencia">Experiência</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </div>
-        </nav>
-    </footer>
-    <script src="script.js"></script>
+        <div class="carousel-item">
+          <i class="devicon-javascript-plain icon-carousel"></i>
+          JavaScript
+        </div>
+        <div class="carousel-item">
+          
+          <i class="devicon-typescript-plain icon-carousel"></i>
+          
+          TypeScript
+        </div>
+        <div class="carousel-item">
+          <i class="devicon-csharp-plain-wordmark icon-carousel"></i>
+          C#
+        </div>
+        <div class="carousel-item">
+          <i class="devicon-flutter-plain icon-carousel"></i>
+          Flutter
+        </div>
+        <div class="carousel-item">
+          <i class="devicon-postgresql-plain icon-carousel"></i>
+          Postgres
+        </div>
+        <div class="carousel-item">
+          <i class="devicon-firebase-plain icon-carousel"></i>
+          Firebase
+        </div>
+        <div class="carousel-item">
+          <i class="devicon-mongodb-plain icon-carousel"></i>
+          MongoDB
+        </div>
+        <div class="carousel-item">
+          <i class="devicon-swagger-plain icon-carousel"></i>
+          Swagger
+        </div>
+      </div>
+  </section>
+  <section id="projects">
+    <p class="section_text_p1">Explore alguns dos meus</p>
+    <h1 class="title">Projetos</h1>
+    <div class="carousel-wrapper">
+      <button id="btn-prev" class="carousel-btn">❮</button>
+      <div id="carousel-track" class="carousel-track">
+        <div class="details-container">
+          <div class="article-container">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="Projeto 1" class="project-img"/>
+          </div>
+          <p>App móvel desenvolvido em Flutter, utilizando Firebase Firestore. Desenvolvido para ser uma rede social de tutoriais. Possui diversas ferramentas de acessibilidade e machine learning.</p>
+          <h2 class="experience-sub-title project-title">How To</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/KlotJota/how_to'">GitHub</button>
+          </div>
+        </div>
+        <div class="details-container">
+          <div class="article-container">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="Projeto 2" class="project-img"/>
+          </div>
+          <p>Desenvolvido atraves do NestJs e utilizando MongoDB, se trata de um aplicativo web de organização de tarefas através de cards.</p>
+          <h2 class="experience-sub-title project-title">Kanban de cards</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/KlotJota/teste-field/tree/feature/backend'">GitHub</button>
+          </div>
+        </div>
+        <div class="details-container">
+          <div class="article-container">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="Projeto 3" class="project-img"/>
+          </div>
+          <p>Utilizando C# e SQL Server, se trata de um sistema de biblioteca virtual construído para um projeto na faculdade.</p>
+          <h2 class="experience-sub-title project-title">Biblioteca Virtual</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/KlotJota/BibliotecaVirtual'">GitHub</button>
+          </div>
+        </div>
+        <div class="details-container">
+          <div class="article-container">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="Projeto 4" class="project-img"/>
+          </div>
+          <p>Pequeno projeto web feito em JavaScript e React que consulta CEPs através da API viacep.</p>
+          <h2 class="experience-sub-title project-title">Consulta CEP</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/KlotJota/consulta-cep'">GitHub</button>
+          </div>
+        </div>
+      </div>
+      <button id="btn-next" class="carousel-btn">❯</button>
+    </div>
+  </section>
+  
+  <section id="contact">
+    <p class="section_text_p1">Meios de</p>
+    <h1 class="title">Contato</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Ícone de email" class="icon contact-icon email-icon">
+        <p><a href="mailto:jonathan.specamillio@hotmail.com">jonathan.specamillio@hotmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="Ícone de LinkedIn" class="icon contact-icon">
+        <p><a href="https://www.linkedin.com/in/jonathan-garcia-speçamillio-619252224/">LinkedIn</a></p>
+      </div>
+    </div>
+    <p class="section_text_p1">Ou utilizando alguma das formas na barra de navegação ao lado</p>
+  </section>
+  <footer>
+
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
