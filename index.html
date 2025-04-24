@@ -18,12 +18,18 @@
   <div class="fourth-animated-blob"></div>
   <nav id="desktop-nav">
     <ul class="nav-links">
-      <li><img src="./assets/linkedin.png" alt="Meu perfil no LinkedIn" class="icon"
-          onclick="location.href='https://www.linkedin.com/in/jonathan-garcia-speçamillio-619252224/'"></li>
-      <li><img src="./assets/github.png" alt="Meu perfil no GitHub" class="icon"
-          onclick="location.href='https://github.com/KlotJota'"></li>
-      <li><img src="./assets/instagram.png" alt="Meu perfil no Instagram" class="icon"
-          onclick="location.href='https://www.instagram.com/_jonathan_gs_/'"></li>
+      <li>
+        <a href="https://www.linkedin.com/in/jonathan-garcia-speçamillio-619252224/" target="_blank">
+          <img src="./assets/linkedin.png" alt="Meu perfil no LinkedIn" class="icon">
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/KlotJota" target="_blank">
+          <img src="./assets/github.png" alt="Meu perfil no GitHub" class="icon">
+        </a>
+      </li>
+      <li><img src="./assets/email.png" alt="Meu email" class="icon"
+        onclick="location.href='mailto:jonathan.specamillio@hotmail.com'"></li>
     </ul>
   </nav>
   <section id="profile">
@@ -31,6 +37,11 @@
       <p class="section_text_p1"> Olá, eu sou o</p>
       <h1 class="title">Jonathan</h1>
       <p class="section_text_p2">Desenvolvedor Fullstack</p>
+      <div class="btn-container">
+        <a href="./assets/Curriculo.pdf" target="_blank">
+          <button class="btn btn-color-2 project-btn">Currículo</button>
+        </a>
+      </div>
     </div>
     <div class="section_pic-container">
       <img src="./assets/perfil2.jpeg" alt="Foto de perfil de Jonathan">
@@ -39,21 +50,10 @@
   <section id="about">
     <p class="section_text_p1">Saiba mais</p>
     <p class="title">Sobre mim</p>
-    <p class="about-description">Formado em 2023 em Análise e Desenvolvimento de Sistema pela FATEC - Rio Preto, venho atuando como desenvolvedor FullStack desde então. Desde cedo familiarizado com tecnologia, busco me aprofundar cada vez mais nas áreas que gosto e atuo.</p>
+    <p class="about-description">Formado em 2023 em Análise e Desenvolvimento de Sistema pela FATEC - Rio Preto, venho atuando como desenvolvedor FullStack desde então. Desde cedo familiarizado com tecnologia, busco me aprofundar cada vez mais nas áreas que gosto e atuo. <br/> Sou curioso, adaptável e focado em aprendizado contínuo. Tenho facilidade para me integrar a novos times, aprender novas tecnologias com agilidade e manter um ritmo de entregas consistente e organizado.</p>
     <div class="section-container">
       <div class="about-details-container">
         <div class="about-containers">
-          <div class="details-container-about">
-            <img src="./assets/experience.png" alt="Ícone de experiência" class="icon" />
-            <h3 class="about-title">Experiência</h3>
-            <p> Node.js <br />
-              Angular <br />
-              Graphql <br />
-              C# <br />
-              SQL <br />
-              NoSQL <br />
-            </p>
-          </div>
           <div class="details-container-about">
             <img src="./assets/education.png" alt="Ícone de formação" class="icon" />
             <h3 class="about-title">Formação</h3>
@@ -61,10 +61,12 @@
           </div>
           <div class="details-container-about">
             <img src="./assets/experience.png" alt="Ícone de experiência" class="icon" />
-            <h3 class="about-title">Stacks</h3>
-            <p> Git <br />
-              Testes unitários e e2e <br />
-              Metodologias ágeis <br />
+            <h3 class="about-title">Stacks principais</h3>
+            <p> Node.js <br />
+              Graphql <br />
+              Angular <br />
+              PostgreSQL <br />
+              NestJs <br />
             </p>
           </div>
         </div>
@@ -76,30 +78,28 @@
     <h1 class="title">Experiências</h1>
       <div class="experience-grid">
         <div class="carousel-item">
-          <i class="devicon-html5-plain icon-carousel"></i>
-          HTML
-        </div>
-        <div class="carousel-item">
-          <i class="devicon-css3-plain icon-carousel"></i>
-          CSS
-        </div>
-        <div class="carousel-item">
           <i class="devicon-javascript-plain icon-carousel"></i>
           JavaScript
         </div>
         <div class="carousel-item">
-          
           <i class="devicon-typescript-plain icon-carousel"></i>
-          
           TypeScript
         </div>
         <div class="carousel-item">
-          <i class="devicon-csharp-plain-wordmark icon-carousel"></i>
-          C#
+          <i class="devicon-graphql-plain icon-carousel"></i>
+          GraphQL
+        </div>
+        <div class="carousel-item">
+          <i class="devicon-nestjs-original icon-carousel"></i>
+          NestJs
         </div>
         <div class="carousel-item">
           <i class="devicon-flutter-plain icon-carousel"></i>
           Flutter
+        </div>
+        <div class="carousel-item">
+          <i class="devicon-csharp-plain-wordmark icon-carousel"></i>
+          C#
         </div>
         <div class="carousel-item">
           <i class="devicon-postgresql-plain icon-carousel"></i>
@@ -114,8 +114,20 @@
           MongoDB
         </div>
         <div class="carousel-item">
+          <i class="devicon-angular-plain icon-carousel"></i>
+          Angular
+        </div>
+        <div class="carousel-item">
           <i class="devicon-swagger-plain icon-carousel"></i>
           Swagger
+        </div>
+        <div class="carousel-item">
+          <i class="devicon-html5-plain icon-carousel"></i>
+          HTML
+        </div>
+        <div class="carousel-item">
+          <i class="devicon-css3-plain icon-carousel"></i>
+          CSS
         </div>
       </div>
   </section>
@@ -132,7 +144,9 @@
           <p>App móvel desenvolvido em Flutter, utilizando Firebase Firestore. Desenvolvido para ser uma rede social de tutoriais. Possui diversas ferramentas de acessibilidade e machine learning.</p>
           <h2 class="experience-sub-title project-title">How To</h2>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/KlotJota/how_to'">GitHub</button>
+            <a href="https://github.com/KlotJota/how_to" target="_blank">
+              <button class="btn btn-color-2 project-btn">GitHub</button>
+            </a>
           </div>
         </div>
         <div class="details-container">
@@ -142,7 +156,9 @@
           <p>Desenvolvido atraves do NestJs e utilizando MongoDB, se trata de um aplicativo web de organização de tarefas através de cards.</p>
           <h2 class="experience-sub-title project-title">Kanban de cards</h2>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/KlotJota/teste-field/tree/feature/backend'">GitHub</button>
+            <a href="https://github.com/KlotJota/teste-field/tree/feature/backend" target="_blank">
+              <button class="btn btn-color-2 project-btn">GitHub</button>
+            </a>
           </div>
         </div>
         <div class="details-container">
@@ -152,7 +168,9 @@
           <p>Utilizando C# e SQL Server, se trata de um sistema de biblioteca virtual construído para um projeto na faculdade.</p>
           <h2 class="experience-sub-title project-title">Biblioteca Virtual</h2>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/KlotJota/BibliotecaVirtual'">GitHub</button>
+            <a href="https://github.com/KlotJota/BibliotecaVirtual" target="_blank">
+              <button class="btn btn-color-2 project-btn">GitHub</button>
+            </a>
           </div>
         </div>
         <div class="details-container">
@@ -162,32 +180,15 @@
           <p>Pequeno projeto web feito em JavaScript e React que consulta CEPs através da API viacep.</p>
           <h2 class="experience-sub-title project-title">Consulta CEP</h2>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/KlotJota/consulta-cep'">GitHub</button>
+            <a href="https://github.com/KlotJota/consulta-cep" target="_blank">
+              <button class="btn btn-color-2 project-btn">GitHub</button>
+            </a>
           </div>
         </div>
       </div>
       <button id="btn-next" class="carousel-btn">❯</button>
     </div>
   </section>
-  
-  <section id="contact">
-    <p class="section_text_p1">Meios de</p>
-    <h1 class="title">Contato</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img src="./assets/email.png" alt="Ícone de email" class="icon contact-icon email-icon">
-        <p><a href="mailto:jonathan.specamillio@hotmail.com">jonathan.specamillio@hotmail.com</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img src="./assets/linkedin.png" alt="Ícone de LinkedIn" class="icon contact-icon">
-        <p><a href="https://www.linkedin.com/in/jonathan-garcia-speçamillio-619252224/">LinkedIn</a></p>
-      </div>
-    </div>
-    <p class="section_text_p1">Ou utilizando alguma das formas na barra de navegação ao lado</p>
-  </section>
-  <footer>
-
-  </footer>
   <script src="script.js"></script>
 </body>
 </html>

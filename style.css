@@ -279,6 +279,7 @@ img {
 
 #about {
     position: relative;
+    justify-items: center;
 }
 
 .about-title {
@@ -292,6 +293,7 @@ img {
 .about-description {
   text-align: center;
   margin-top: 2.5rem;
+  width: 70rem;
 }
 
 .section-container {
@@ -374,15 +376,19 @@ img {
     justify-content: center;
     gap: 1rem;
     margin-top: 3rem;
+    margin-bottom: 3rem;
   }
   
   .carousel-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     flex: 0 0 auto;
     scroll-snap-align: center;
     min-width: 250px;
     background-color: #c5cedb;
     border-radius: 1rem;
-    padding: 1.5rem;
+    padding: 1rem;
     text-align: center;
     font-weight: bold;
     font-size: 1.2rem;
@@ -561,12 +567,8 @@ article .icon {
     font-size: larger;
 }
 
-.contact-icon {
-    cursor: default;
-}
-
 .email-icon {
-    height: 2.9rem;
+    height: 3rem;
 }
 
 /* Seçao Footer */
