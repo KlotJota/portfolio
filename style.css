@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -189,6 +190,9 @@ section {
 
 img {
     border-radius: 20%;
+    margin-bottom: 2rem;
+    max-width: 100%;
+    height: auto;
 }
 
 .section_text {
@@ -292,8 +296,9 @@ img {
 
 .about-description {
   text-align: center;
-  margin-top: 2.5rem;
-  width: 70rem;
+  margin: 2.5rem auto 0;
+  max-width: 60rem;
+  padding: 0 1rem;
 }
 
 .section-container {
@@ -493,9 +498,12 @@ article .icon {
   }
   
   .details-container:hover {
+    opacity: 1;
     transform: scale(1.05);
+    filter: blur(0);
+    z-index: 3;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  }
+}
   
   .carousel-btn {
     font-size: 2.5rem;
